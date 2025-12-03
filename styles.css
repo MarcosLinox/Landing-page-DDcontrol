@@ -97,8 +97,9 @@ img {
 }
 
 .logo-img {
-  width: 215px;
+  width: 13rem;
   height: auto;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .logo-text {
