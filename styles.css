@@ -464,10 +464,48 @@ img {
   color: var(--text-muted);
 }
 
+
+
 .hero-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+}
+
+/* Empilha as três features em coluna única para telas pequenas (<= 410px)
+   garantindo que "Relatório..., Reforço..., Processo..." fiquem um abaixo do outro */
+@media (max-width: 410px) {
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Garante que o item que antes fazia span ocupe sua própria linha corretamente */
+  .hero-feature.full-width {
+    grid-column: auto;
+  }
+  
+  /* Ajustes para o card lateral em telas muito pequenas */
+  .hero-card {
+    max-width: 360px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
+
+  .hero-card-image {
+    height: 12rem;
+  }
+
+  .hero-card-content {
+    padding: 1rem;
+  }
+
+  /* Reduz o tamanho do botão grande para caber melhor */
+  .btn-lg {
+    padding: 0.9rem 1.25rem;
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
 }
 
 .hero-feature {
