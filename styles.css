@@ -484,7 +484,7 @@ img {
   .hero-feature.full-width {
     grid-column: auto;
   }
-  
+  /*teste*/
   /* Ajustes para o card lateral em telas muito pequenas */
   .hero-card {
     max-width: 360px;
