@@ -103,6 +103,3 @@ window.addEventListener("scroll", () => {
     el.style.transform = `translateY(${scrolled * speed}px)`
   })
 })
-
-// Log for debugging
-console.log("[v0] DDControl Landing Page com animações melhoradas carregado com sucesso")

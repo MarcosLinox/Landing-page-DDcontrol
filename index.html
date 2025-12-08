@@ -11,15 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
     <!-- Header -->
     <header id="header" class="header">
         <div class="container">
             <div class="header-content">
                 <!-- Logo -->
-                <div class="logo">
+                <a class="logo" data-section="top">
                     <img class="logo-img" src="./assets/LOGO DDCONTROL -  ATUAL.png" alt="Logo da DDControl">
-                </div>
+                </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="nav-desktop">
@@ -147,59 +147,119 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Nossos Serviços</h2>
-                <p class="section-subtitle">Soluções profissionais para eliminar pragas e proteger seu lar</p>
+                <p class="section-subtitle">Soluções profissionais e eficazes para eliminar pragas e proteger seu lar</p>
             </div>
             
-            <div class="features-grid">
+            <!-- Reorganizado em 3 colunas com todos os 12 serviços -->
+            <div class="features-grid features-grid-3">
+                <!-- Desinsetização -->
                 <div class="feature-card" data-delay="0">
                     <div class="feature-icon-wrapper">
-                        <p class="insetoIcon">🪳</p>
+                        <img src="../assets/desinsetizacao-icon1.png" class="insetoIcon feature-icon-service">
+                    </div>
+                    <h3 class="feature-title">Desinsetização</h3>
+                    <p class="feature-description">Eliminação profissional de insetos em residências, empresas e indústrias. Produtos seguros e eficientes.</p>
+                </div>
+
+                <!-- Controle de Baratas -->
+                <div class="feature-card" data-delay="50">
+                    <div class="feature-icon-wrapper">
+                        <img src="../assets/barata.png" class="insetoIcon feature-icon-service">
                     </div>
                     <h3 class="feature-title">Controle de Baratas</h3>
-                    <p class="feature-description">Eliminação eficaz com produtos profissionais. Aplicação precisa e relatório fotográfico completo.</p>
+                    <p class="feature-description">Eliminação eficaz com produtos profissionais. Aplicação precisa e tratamento residual.</p>
                 </div>
 
+                <!-- Controle de Formigas -->
                 <div class="feature-card" data-delay="100">
                     <div class="feature-icon-wrapper">
-                        <p  class="insetoIcon">🐜</p>
+                        <img src="../assets/formiga.png" class="insetoIcon feature-icon-service">
                     </div>
                     <h3 class="feature-title">Controle de Formigas</h3>
-                    <p class="feature-description">Tratamento específico para todos os tipos de formigas. Técnica gel para ambientes internos.</p>
+                    <p class="feature-description">Tratamento específico para todos os tipos. Técnica gel para ambientes internos.</p>
                 </div>
 
+                <!-- Controle de Aranhas -->
+                <div class="feature-card" data-delay="150">
+                    <div class="feature-icon-wrapper">
+                        <img src="../assets/aranha.png" class="insetoIcon feature-icon-service">
+                    </div>
+                    <h3 class="feature-title">Controle de Aranhas</h3>
+                    <p class="feature-description">Remoção segura e eficaz de aranhas. Proteção sem risco para sua família.</p>
+                </div>
+
+                <!-- Controle de Traças -->
                 <div class="feature-card" data-delay="200">
                     <div class="feature-icon-wrapper">
-                        <p class="insetoIcon">🦂</p>
+                        <img src="../assets/traça.png" class="insetoIcon feature-icon-service">
+                    </div>
+                    <h3 class="feature-title">Controle de Traças</h3>
+                    <p class="feature-description">Elimine traças de livros e alimentos. Tratamento preventivo e residual.</p>
+                </div>
+
+                <!-- Controle de Escorpiões -->
+                <div class="feature-card" data-delay="250">
+                    <div class="feature-icon-wrapper">
+                        <img src="../assets/escorpiao1.png" class="insetoIcon feature-icon-service">
                     </div>
                     <h3 class="feature-title">Controle de Escorpiões</h3>
-                    <p class="feature-description">Proteção contra escorpiões com barreira química residual. Segurança para toda sua família.</p>
+                    <p class="feature-description">Proteção contra escorpiões com barreira química residual. Segurança garantida.</p>
                 </div>
 
+                <!-- Descupinização -->
                 <div class="feature-card" data-delay="300">
                     <div class="feature-icon-wrapper">
-                        <p class="insetoIcon">🐜</p>
+                        <img src="../assets/cupim.png" class="insetoIcon feature-icon-service">
                     </div>
                     <h3 class="feature-title">Descupinização</h3>
-                    <p class="feature-description">Tratamento especializado contra cupins de solo e madeira seca. Preservação do seu patrimônio.</p>
+                    <p class="feature-description">Tratamento especializado contra cupins de solo e madeira. Preservação do patrimônio.</p>
                 </div>
 
+                <!-- Controle de Mosquitos -->
+                <div class="feature-card" data-delay="350">
+                    <div class="feature-icon-wrapper">
+                        <img src="../assets/mosquito.png" class="insetoIcon feature-icon-service">
+                    </div>
+                    <h3 class="feature-title">Controle de Mosquitos</h3>
+                    <p class="feature-description">Eliminação de mosquitos, dengue e pernilongo. Proteção da sua saúde.</p>
+                </div>
+
+                <!-- Controle de Moscas -->
                 <div class="feature-card" data-delay="400">
                     <div class="feature-icon-wrapper">
-                        <p class="insetoIcon">🐀</p>
+                        <img src="../assets/mosca.png" class="insetoIcon feature-icon-service">
                     </div>
-                    <h3 class="feature-title">Controle de Roedores</h3>
-                    <p class="feature-description">Desratização com iscas seguras e estratégia de controle integrado. Monitoramento eficaz.</p>
+                    <h3 class="feature-title">Controle de Moscas</h3>
+                    <p class="feature-description">Eliminação de moscas domésticas e de frutas. Ambiente limpo e higienizado.</p>
                 </div>
 
+                <!-- Controle de Pombos -->
+                <div class="feature-card" data-delay="450">
+                    <div class="feature-icon-wrapper">
+                        <img src="../assets/pombo.png" class="insetoIcon feature-icon-service">
+                    </div>
+                    <h3 class="feature-title">Controle de Pombos</h3>
+                    <p class="feature-description">Afastamento humano de pombos e aves. Instalação de campo eletromagnético.</p>
+                </div>
+
+                <!-- Controle de Roedores -->
                 <div class="feature-card" data-delay="500">
                     <div class="feature-icon-wrapper">
-                        <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            <path d="M9 12l2 2 4-4"></path>
-                        </svg>
+                        <img src="../assets/rato.png" class="insetoIcon feature-icon-service">
                     </div>
-                    <h3 class="feature-title">Tratamento Preventivo</h3>
-                    <p class="feature-description">Planos personalizados de prevenção. Mantenha seu ambiente sempre protegido contra pragas.</p>
+                    <h3 class="feature-title">Controle de Roedores</h3>
+                    <p class="feature-description">Desratização com iscas seguras. Monitoramento contínuo e eficaz.</p>
+                </div>
+
+                <!-- Limpeza e Desinfecção de Caixa d'Água -->
+                <div class="feature-card" data-delay="550">
+                        <div class="water-tank-icon-wrapper">
+                            <svg class="water-tank-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            </svg>
+                        </div>
+                    <h3 class="feature-title">Limpeza e Desinfecção</h3>
+                    <p class="feature-description">Limpeza profissional e desinfecção de caixa d'água. Saúde e segurança garantidas.</p>
                 </div>
             </div>
 
@@ -211,7 +271,7 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                     </svg>
-                    Solicitar orçamento pelo WhatsApp
+                    Solicite um Orçamento pelo WhatsApp
                 </a>
             </div>
         </div>
@@ -687,7 +747,10 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>R. Hortência, Quadra 03 - Nº 09 - Coxipó da Ponte, Cuiabá - MT, 78000-000, Brasil</span>
+                            <a href="https://maps.app.goo.gl/2LSqqDkYRMUYfBYZA" target="_blank" rel="noopener noreferrer" class="footer-link">
+                                <span>R. Hortência, Quadra 03 - Nº 09 - Coxipó da Ponte, Cuiabá - MT, 78000-000, Brasil</span>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>

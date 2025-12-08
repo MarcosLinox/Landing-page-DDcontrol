@@ -131,7 +131,7 @@ img {
   background: none;
   border: none;
   color: var(--text);
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -624,8 +624,8 @@ img {
 }
 
 .feature-icon-wrapper {
-  width: 48px;
-  height: 48px;
+  width: 100px;
+  height: 100px;
   background: var(--accent-bg);
   border-radius: var(--radius);
   display: flex;
@@ -636,8 +636,8 @@ img {
 }
 
 .feature-card:hover .feature-icon-wrapper {
-  background: var(--primary);
   transform: rotate(5deg) scale(1.1);
+  background: var(--primary);
 }
 
 .feature-card:hover .feature-icon-wrapper .feature-icon {
