@@ -1697,3 +1697,161 @@ img {
   height: auto;
   padding: 0%;
 }
+
+/* Water Tank Section */
+.water-tank-section {
+  padding: 4rem 0 6rem;
+  background: linear-gradient(to bottom, rgba(255, 245, 245, 0.2), var(--bg));
+}
+
+.water-tank-card {
+  max-width: 64rem;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 0;
+  transition: all 0.4s ease;
+}
+
+.water-tank-card:hover {
+  box-shadow: 0 20px 50px rgba(84, 6, 4, 0.2);
+}
+
+.water-tank-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 245, 245, 0.3);
+}
+
+.water-tank-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.water-tank-icon {
+  color: white;
+}
+
+.water-tank-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.water-tank-description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.water-tank-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateX(8px);
+}
+
+.benefit-icon {
+  color: #2563eb;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.benefit-item span {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.water-tank-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(84, 6, 4, 0.1);
+}
+
+.water-tank-cta-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.water-tank-image {
+  height: 16rem;
+  position: relative;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  overflow: hidden;
+}
+
+.water-tank-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  transition: transform 0.6s ease;
+}
+
+.water-tank-card:hover .water-tank-image img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Water Tank Section */
+@media (min-width: 768px) {
+  .water-tank-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .water-tank-content {
+    padding: 3rem;
+  }
+
+  .water-tank-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .water-tank-section {
+    padding: 3rem 0 4rem;
+  }
+
+  .water-tank-content {
+    padding: 1.5rem;
+  }
+
+  .water-tank-title {
+    font-size: 1.5rem;
+  }
+
+  .water-tank-image {
+    height: 300px;
+  }
+}
