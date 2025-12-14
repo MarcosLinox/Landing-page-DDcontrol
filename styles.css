@@ -1673,6 +1673,28 @@ img {
     transition: all 0.3s ease;
 }
 
+.partner-logo-luft{
+  filter: brightness(0);
+  flex-shrink: 0;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo-luft img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.partner-logo-luft img:hover{
+  filter: brightness(0);
+  transform: scale(1.1);
+}
+
 .partner-logo img:hover {
     filter: grayscale(0%) opacity(1);
     transform: scale(1.1);
